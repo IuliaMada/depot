@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Product.delete_all
+#...
+Product.create!(title: 'Vara',
+	description:
+	%{<p> Un tablou superb care exprima relaxare, liniste, caldura etc</p>},
+	image_url: '1.jpeg',
+	price: 300.00)
+#...
